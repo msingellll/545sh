@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Main Navigation">
             <div class="logo">545 Devin Ln</div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
@@ -19,7 +19,7 @@
         <div class="hero">
             <h1>Welcome to the Future of Living</h1>
             <p>Experience a smart home designed for comfort, efficiency, and innovation.</p>
-            <a href="#features" class="btn">Explore Features</a>
+            <a href="#features" class="btn" aria-label="Explore Features Section">Explore Features</a>
         </div>
     </header>
 
@@ -28,17 +28,17 @@
             <h2>Smart Home Features</h2>
             <div class="feature-grid">
                 <div class="feature">
-                    <img src="images/voice-control.svg" alt="Voice Control">
+                    <img src="images/voice-control.svg" alt="Icon representing voice control features">
                     <h3>Voice Control</h3>
                     <p>Control your home with simple voice commands.</p>
                 </div>
                 <div class="feature">
-                    <img src="images/energy-saving.svg" alt="Energy Saving">
+                    <img src="images/energy-saving.svg" alt="Icon representing energy-saving features">
                     <h3>Energy Efficient</h3>
                     <p>Save energy with intelligent lighting and climate systems.</p>
                 </div>
                 <div class="feature">
-                    <img src="images/security.svg" alt="Security">
+                    <img src="images/security.svg" alt="Icon representing advanced security features">
                     <h3>Advanced Security</h3>
                     <p>Feel safe with state-of-the-art security features.</p>
                 </div>
@@ -48,10 +48,10 @@
         <section id="gallery" class="gallery">
             <h2>Gallery</h2>
             <div class="gallery-grid">
-                <img src="images/living-room.jpg" alt="Living Room">
-                <img src="images/kitchen.jpg" alt="Kitchen">
-                <img src="images/bedroom.jpg" alt="Bedroom">
-                <img src="images/bathroom.jpg" alt="Bathroom">
+                <img src="images/living-room.jpg" alt="Modern living room with smart features">
+                <img src="images/kitchen.jpg" alt="Stylish kitchen with smart appliances">
+                <img src="images/bedroom.jpg" alt="Cozy bedroom with intelligent lighting">
+                <img src="images/bathroom.jpg" alt="Sleek bathroom with advanced features">
             </div>
         </section>
     </main>
@@ -59,11 +59,17 @@
     <footer id="contact">
         <h2>Contact Us</h2>
         <p>Interested in the smart home experience? Reach out to us today!</p>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" class="btn" aria-label="Send your message">Send Message</button>
         </form>
         <p>&copy; 2024 545 Devin Ln. All rights reserved.</p>
     </footer>
